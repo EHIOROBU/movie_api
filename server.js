@@ -13,7 +13,7 @@ app.use("/api/movies", movieRoute)
 
 app.get("/", async (req, res) => {
     res.status(200).json({
-        message: "Welcome to books API"
+        message: "Welcome to Movie API"
     })
 })
 
