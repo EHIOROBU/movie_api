@@ -11,7 +11,11 @@ app.use(express.urlencoded({ extended: false }))
 //route
 app.use("/api/movies", movieRoute)
 
-
+app.get("/", async (req, res) => {
+    res.status(200).json({
+        message: "Welcome to books API"
+    })
+})
 
 require("dotenv").config()
 const PORT = process.env.PORT || 3000;
